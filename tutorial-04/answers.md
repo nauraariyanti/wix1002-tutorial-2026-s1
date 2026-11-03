@@ -71,15 +71,16 @@ System.out.println("Program End");
 
 ## Question 3
 
-int[] f = new int[11];   
-f[1] = 1;
-f[2] = 1;
+int f1 = 1, f2 = 1;
 
-for (int n = 3; n <= 10; n++)
-    f[n] = f[n - 1] + f[n - 2];
+System.out.print(f1 + " " + f2);
 
-for (int n = 1; n <= 10; n++)
-    System.out.print(f[n] + " ");
+for (int n = 3; n <= 10; n++) {
+    int fn = f1 + f2;
+    System.out.print(" " + fn);
+    f1 = f2;
+    f2 = fn;
+}
 System.out.println();
 
 ## Question 4
