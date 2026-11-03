@@ -72,7 +72,6 @@ System.out.println("Program End");
 ## Question 3
 
 int f1 = 1, f2 = 1;
-
 System.out.print(f1 + " " + f2);
 
 for (int n = 3; n <= 10; n++) {
@@ -81,6 +80,7 @@ for (int n = 3; n <= 10; n++) {
     f1 = f2;
     f2 = fn;
 }
+
 System.out.println();
 
 ## Question 4
@@ -90,5 +90,5 @@ System.out.print("Enter a string: ");
 String str = input.nextLine();
 
 for (int i = str.length() - 1; i >= 0; i--)
-    System.out.print(str.charAt(i));
+   System.out.print(str.charAt(i));
 System.out.println();
